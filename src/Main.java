@@ -29,7 +29,7 @@ public class Main {
             System.out.println("\nNão há caminho entre (0,0) e (2,2).");
         }
 
-        // Pergunta 4 e 5: Ciclo e Complexidade
+        // Pergunta 4 : Ciclo
         Cycle finder = new Cycle(G);
         if (finder.hasCycle()) {
             System.out.println("\nO grafo possui ciclo: Sim");
@@ -42,12 +42,8 @@ public class Main {
             System.out.println("\nO grafo possui ciclo: Não");
         }
         
-        exibirAnaliseComplexidade();
+
     }
 
-    private static void exibirAnaliseComplexidade() {
-        System.out.println("\n--- Análise de Complexidade (Cycle Detection) ---");
-        System.out.println("Tempo: O(V + E) - Visita cada vértice e aresta via DFS.");
-        System.out.println("Espaço: O(V) - Para marcar vértices visitados e a pilha de recursão.");
-    }
+
 }
