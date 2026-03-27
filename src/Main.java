@@ -42,8 +42,12 @@ public class Main {
             System.out.println("\nO grafo possui ciclo: Não");
         }
         
-
+        exibirAnaliseComplexidade();
     }
 
-
+    private static void exibirAnaliseComplexidade() {
+        System.out.println("\n--- Análise de Complexidade (Cycle Detection) ---");
+        System.out.println("Tempo: O(V + E) - Visita cada vértice e aresta via DFS.");
+        System.out.println("Espaço: O(V) - Para marcar vértices visitados e a pilha de recursão.");
+    }
 }
